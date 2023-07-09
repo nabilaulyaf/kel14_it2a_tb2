@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 150px; 
+}
+
+.wrapper img{
+  width: 100%;
+}

@@ -2,7 +2,7 @@ function Exhibitions() {
     return(
         <div>
             <p className="text-neutral-700 text-3xl font-bold text-center mb-12 pt-20">&#10032; Ganara Exhibitions &#65381;&#65439;&#10023;</p>
-            <div className="container mx-auto flex justify-evenly">
+            <div className="flex justify-evenly  grid gap-4 text-center md:grid-cols-3 ml-20 mr-20 mb-32">
                 <div className="shadow-lg max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-stone-300 dark:border-gray-700 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                     <img className="rounded-t-lg" src="https://media.discordapp.net/attachments/1127174622513729596/1127178478282874920/BA0A6B7D-DD86-4114-AA11-6B586E4A5C62.jpg" />
                     <div className="p-5">

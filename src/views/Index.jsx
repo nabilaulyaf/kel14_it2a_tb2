@@ -1,12 +1,12 @@
-import ganaraa from "../img/ganaraa.jpg"
+import bghome from "../img/bghome.jpg"
 
 function Index() {
     return(
         <div>
-            <div className="grid bg-no-repeat bg-cover w-full h-screen relative content-center" style={{backgroundImage: `url(${ganaraa})`}}>
+            <div className="grid bg-no-repeat bg-cover w-full h-screen relative content-center " style={{backgroundImage: `url(${bghome})`}}>
                 <h2 className="text-zinc-300 text-2xl text-left ml-20 mb-2 mt-44">WELCOME TO</h2>
                 <h1 className="text-zinc-300 text-5xl text-left font-bold ml-20 mb-5 mt-5 animate-bounce ">GANARA ART SPACE</h1>
-                <h2 className="text-zinc-300 text-lg text-left ml-20">A Futuristic Art Healing Space</h2>
+                <h2 className="text-zinc-300 text-xl text-left ml-20">A Futuristic Art Healing Space</h2>
                 <div className="grid w-auto">
                     <a href="/Exhibitions" className="text-white w-36 text-center ml-20 mt-5 px-3 py-2 text-sm font-medium rounded-lg transition ease-in-out delay-150 bg-stone-600 hover:-translate-y-1 hover:scale-110 hover:bg-stone-800 duration-300">Read More</a> 
                 </div>

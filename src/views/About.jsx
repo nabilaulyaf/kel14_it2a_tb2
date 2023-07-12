@@ -2,7 +2,7 @@ import "./About.css"
 
 function About() {
   const handleClick = () => {
-    alert('Send button has been clicked!');
+    alert('Leave a message?');
   };
     return(
         <div>
@@ -122,39 +122,39 @@ function About() {
             </div>
           </div>
           <div className="my-28 w-full flex items-center justify-center">
-            <div className="bg-white mt-10 border border-gray-200 dark:bg-white dark:border-gray-700 shadow-xl rounded lg:px-28 px-20 py-12">
+            <form className="bg-white mt-10 border border-gray-200 dark:bg-white dark:border-gray-700 shadow-xl rounded lg:px-28 px-20 py-12" method="get">
               <p className="text-gray-700 text-center md:text-3xl text-xl font-bold leading-7">Contact Us</p>
               <p className="text-gray-600 text-lg leading-3 mt-3 mb-6">If you have any questions, feel free to contact us</p>
               <div className="md:flex items-center mt-12">
                 <div className="md:w-72 flex flex-col">
                   <label className="text-gray-800 text-base font-semibold leading-none">Name</label>
-                  <input tabIndex={0} arial-label="Please input name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" placeholder="Please input  name" />
+                  <input tabIndex={0} arial-label="Please input name" type="text" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" autoFocus required placeholder="Please input  name" />
                 </div>
                 <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-                  <label className="text-gray-800 text-base font-semibold leading-none">Email Address</label>
-                  <input tabIndex={0} arial-label="Please input email address" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" placeholder="Please input email address" />
+                  <label className="text-gray-800 text-base font-semibold leading-none">Country</label>
+                  <input tabIndex={0} arial-label="Please input country name" type="text" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" required placeholder="Please input country name" />
                 </div>
               </div>
               <div className="md:flex items-center mt-8">
                 <div className="md:w-72 flex flex-col">
-                  <label className="text-gray-800 text-base font-semibold leading-none">Company name</label>
-                  <input tabIndex={0} role="input" arial-label="Please input company name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 " placeholder="Please input company name" />
+                  <label className="text-gray-800 text-base font-semibold leading-none">Phone Number</label>
+                  <input tabIndex={0} role="input" arial-label="Please input company name" type="tel" pattern="(\+62|62|0)8[1-9][0-9]{6,9}$" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 " required placeholder="Please input phone number" />
                 </div>
                 <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-                  <label className="text-gray-800 text-base font-semibold leading-none">Country</label>
-                  <input tabIndex={0} arial-label="Please input country name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" placeholder="Please input country name" />
+                  <label className="text-gray-800 text-base font-semibold leading-none">Email Address</label>
+                  <input tabIndex={0} arial-label="Please input email address" type="email" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" required placeholder="Please input email address" />
                 </div>
               </div>
               <div>
                 <div className="w-full flex flex-col mt-8">
                   <label className="text-gray-800 text-base font-semibold leading-none">Message</label>
-                  <textarea tabIndex={0} aria-label="leave a message" role="textbox" type="name" className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none" defaultValue={""} />
+                  <textarea tabIndex={0} aria-label="leave a message" type="text" className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none" required defaultValue={""} />
                 </div>
               </div>
               <div className="flex items-center justify-center w-full">
-                <button className="text-white mt-9 text-base font-semibold leading-none py-4 px-10 bg-stone-600 rounded hover:bg-stone-800 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 focus:outline-none " onClick={handleClick}>SEND</button>
+                <button className="text-white mt-9 text-base font-semibold leading-none py-4 px-10 bg-stone-600 rounded hover:bg-stone-800 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 focus:outline-none" onClick={handleClick}>SEND</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>   
     );

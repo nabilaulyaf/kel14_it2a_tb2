@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import navLogo from "../img/ganaralogo1.png"
+import navLogo from "../img/ganaralogo.png"
 
 const Navbar = ({ menus }) => {
     const navigate = useNavigate()
